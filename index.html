@@ -32,15 +32,13 @@ _ /_//___\\ __|| ___\\ __\\ ____
     <title>¿ME REPITES?</title>
     <link rel="shortcut icon" href="https://e7.pngegg.com/pngimages/822/718/png-clipart-horseshoe-s-of-a-horseshoe-horse-angle.png">
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-    <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
     </head>
 
 <body>
     
     <a-scene>
       <a-sky color="#c9e9f6"></a-sky>
-    <!-- <a-entity environment="preset: default; groundTexture: walkernoise; groundColor: #228B22; groundColor2: #9ACD32; grid: none; skyType: gradient; skyColor: #ffffff"></a-entity> -->
-        <a-assets>
+            <a-assets>
             <a-asset-items id="potreroconburris" src="./assets/potreroconburris.glb" preload="auto"></a-asset-item>
             <audio id="audio" src="./assets/burriparlante.mpeg" preload="auto" autoplay loop="true"></audio>
             
@@ -49,13 +47,7 @@ _ /_//___\\ __|| ___\\ __\\ ____
                        <a-entity gltf-model="#potreroconburris" scale="2 2 2" position="0 0 0"></a-entity>
                        <a-entity sound="src:#audio; autoplay="true"; loop="true"></a-entity>
                        <a-entity position="8.23 0.3 10" rotation='0 20 0'> <a-camera></a-camera>  </a-entity>  
-                       
-                      <!-- 
-                           
                       
-                        <a-entity position="18 -0.3 -15"> <a-camera></a-camera>  </a-entity> 
-                       
-                    -->
                        
                        
 
